@@ -1,0 +1,246 @@
+.navegadorMenu {
+    background-color: rgb(176, 204, 241) !important;
+}
+
+.navbar-nav li:hover {
+    background-color: #fff !important; /* Cambia este valor por el color que desees */
+}
+
+/* Declaro una variable para el color principal*/
+:root {
+    --color-primario: #f00;
+}
+
+/* showcase para descargar la app*/
+
+.texto-showcase {
+    color: #ffffff;
+    background-color: #100b3c !important;
+    font-size: 1em;
+}
+
+.texto-showcase h2 {
+    color: var(--color-primario) !important;
+}
+
+.card-body {
+    background-color: #000000;
+}
+
+
+/* Información que encontramos en inicio*/
+
+.infoinicio {
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ff0000' fill-opacity='0.2'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.texto_principal {
+    text-align: center;
+    padding-top: 30px;
+    color: var(--color-primario);
+    font-size: 2em;
+}
+
+.texto h2 {
+    color: var(--color-primario);
+}
+
+.texto {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+/*Servicios disponibles */
+
+
+#servicios-disponibles {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+.tituloservicios {
+    text-align: center;
+    color: var(--color-primario);
+    padding-bottom: 15px;
+}
+  
+.tarjetas {
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre tarjetas */
+    gap: 20px;
+}
+  
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    height: 20vh; /* Para ajustar las imagenes y que sean igual de largas todas*/
+}
+  
+.tarjeta h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+  
+.tarjeta p {
+    flex-grow: 1;
+    margin: 20px 0;
+}
+  
+.tarjeta button {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Peticiones*/
+
+@font-face {
+    font-family: "Permanent Marker";
+    src: url(fuente/PermanentMarker-Regular.ttf);
+}
+
+
+#peticiones {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#peticiones h2 {
+    background-color:#959292;
+    color: #475bf5;
+    margin-bottom: 25px;
+    font-family:"Permanent Marker";
+}
+
+.contenedor-peticiones {
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre tarjetas */
+    gap: 20px;
+}
+
+.cardpetit {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardpetit img {
+    width: 100%;
+    height: auto;
+    height: 20vh; /* Para ajustar las imagenes y que sean igual de largas todas*/
+}
+
+.petit-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.botonpetit {
+    margin-top: 15px;
+}
+
+.cardpetit-body h5 {
+    padding: 10px;
+}
+
+.petit-text label {
+    padding: 10px;
+    font-weight: bold;
+    color: #666565;
+}
+
+/* Footer: */
+
+footer h6 {
+    color: #333; /* Color predeterminado */
+    transition: color 0.4s; /* Transición suave del color */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
+}
+
+footer h6:hover {
+    color: #475bf5; /* Cambia el color al pasar el cursor */
+}
+
+/* Para que los iconos del footer no tengan borde*/
+.btn-primary  {
+    border: none !important;
+}
+
+
+/* Log-in: */
+
+.rowlogin {
+    margin-top: 10% !important;
+    margin-bottom: 10% !important;
+
+}
+
+
+/* Registrarse: */
+
+/* Aquí doy color y hago que cambie cuando pasas por encima de los botones de twitter y facebook: */
+.btn-facebook {
+    background: #405D9D;
+    border: none;
+}
+
+.btn-facebook:hover, .btn-facebook:focus {
+    background: #314879;
+}
+
+.btn-twitter {
+    background: #42AEEC;
+    border: none;
+}
+
+.btn-twitter:hover, .btn-twitter:focus {
+    background: #1799e4;
+}
+
+
+select.form-control {
+    height: 52px;
+    padding-left: 0.5rem;
+}
+
+/* Aquí doy atributos al placeholder del formulario de registro*/
+.form-control::placeholder {
+    color: #959292;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

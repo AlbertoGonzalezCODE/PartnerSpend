@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PartnerSpend</title>
+  <!--Esto lo hago para que aparezca un logo arriba en la ventana del buscador -->
+  <link rel="icon" href="img/logo.PNG" type="image/x-icon">
+
+  <link rel="stylesheet" href="bootstrap.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
+</head>
+
+
+<body>
+
+  <div class="container">
+    <header>
+      <!--Añado una clase "navegadorMenu" para darle estilo en css-->
+      <nav class="navbar navbar-expand-lg navegadorMenu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">PartnerSpend
+            <!--Aqui meto un icono que sigue al nombre de la pagina-->
+            <i class="fa-regular fa-handshake"></i>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios-disponibles">Servicios disponibles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="peticiones.html">Peticiones</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sobre nosotros
+                </a>
+                <ul class="dropdown-menu navegadorMenu">
+                  <li><a class="dropdown-item" href="#">Historial</a></li>
+                  <li><a class="dropdown-item" href="#">Competencias</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Cuenta
+                </a>
+                <ul class="dropdown-menu navegadorMenu">
+                  <li><a class="dropdown-item" href="log-in.html">Iniciar sesión</a></li>
+                  <li><a class="dropdown-item" href="registrarse.html">Registrarse</a></li>
+                </ul>
+            </ul>
+            <!--Aquí utilizo un buscador en el menú para poder filtrar información o buscar cosas-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Sección 1 CAROUSEL después del menú (imágenes que se pueden ir pasando)-->
+    <section class="showcase">
+      <div class="card bordeimagen" style="width: 100%;">
+        <img src="img/logo.PNG" class="card-img-top" alt="...">
+        <div class="card-body texto-showcase">
+          <h2>Descarga la app de Partner Spend para:</h2>
+          <p>•Android(Google) / •iOS(Apple) / •Windows / •macOS / •Linux /
+            •Cross-Platform (multiplataforma):</p>
+          <button type="button" class="btn btn-primary">Descargar...</button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="infoinicio">
+      <!-- Texto pagina inicio -->
+      <div class="texto">
+        <h2 class="texto_principal">
+          ¿A qué nos dedicamos y qué encontrarás aquí?
+        </h2>
+        <br />
+        <p>
+          Somos una página web que busca el ahorro de sus usuarios aprovechando
+          los tipos de ofertas que tienen algunas empresas como por ejemplo
+          plataformas de series y música (Netflix, Spotify, Hbo, Disney+...
+          entre otros), gimnasios (BeOne, Olimpia, Unit365... ), clubs de
+          diferentes tipos o hasta para encontrar compañeros de piso en
+          cualquier ciudad de España (teniendo convenios con inmobiliarias como
+          AyC)!!!<br />
+          Nuestra finalidad es facilitar el acceso a servicios premium a través
+          de la colaboración entre personas que buscan compartir los gastos.
+          Pero esto va más allá, ya que puedes emplear la web para compartir
+          cualquier gasto como por ejemplo compartir piso.
+        </p>
+        <br />
+        <h2>Servicios que ofrecemos:</h2>
+        <br />
+        <p class="servicios">• Plataforma de Conexión:</p>
+        - Desarrollo de una plataforma en línea donde los usuarios pueden
+        registrarse y buscar compañeros de suscripción para diversos
+        servicios.<br />
+        - Perfiles detallados que incluyen preferencias de suscripción,
+        intereses y ubicación para facilitar la búsqueda.<br />
+        <br />
+        <p class="servicios">• Seguridad y Transparencia:</p>
+        - Implementación de medidas de seguridad para garantizar la privacidad
+        de los usuarios.<br />
+        - Transparencia en las transacciones y acuerdos, con la posibilidad de
+        establecer reglas y condiciones claras para la colaboración.<br />
+        <br />
+        <p class="servicios">• Asesoramiento Legal:</p>
+        - Ofrecimiento de asesoramiento legal básico para la redacción de
+        acuerdos de colaboración entre los usuarios, garantizando una relación
+        equitativa y sin complicaciones legales.<br />
+        <br />
+        <p class="servicios">• Amplia Gama de Servicios:</p>
+        - Inclusión de diversos servicios, desde plataformas de transmisión
+        hasta aplicaciones de fitness, para adaptarse a los diferentes intereses
+        y necesidades de los usuarios.<br />
+        <br />
+        <p class="servicios">• Comunicación Facilitada:</p>
+        - Herramientas de comunicación integradas en la plataforma para que los
+        usuarios puedan discutir y acordar detalles de la colaboración de manera
+        fácil y eficiente.<br />
+        <br />
+        <h2>Ventajas para los usuarios:</h2>
+        <br />
+        - Ahorro significativo en costos de suscripción.<br />
+        - Conexión con personas afines para compartir intereses.<br />
+        - Experiencia premium a un precio más accesible.<br />
+        <br />
+        <h2>Visión a Futuro:</h2>
+        <br />
+        Partner Spend busca convertirse en la principal plataforma de
+        colaboración en la suscripción, expandiendo su oferta a nuevos servicios
+        y creando una red global de usuarios que comparten intereses y gastos de
+        forma eficiente.<br />
+        <br />
+        En este modelo, la empresa actúa como un facilitador que no solo crea
+        conexiones entre personas, sino que también se preocupa por garantizar
+        una experiencia segura y beneficiosa para todos sus usuarios.<br />
+      </div>
+    </section>
+
+
+    <!-- Servicios disponibles-->
+    <section id="servicios-disponibles">
+      <h2 class="tituloservicios">Servicios disponibles:</h2>
+      <div class="tarjetas row row-cols-12 row-cols-md-3 row-cols-xl-6">
+        <!-- Primera tarjeta -->
+        <div class="tarjeta">
+          <img src="img/plataformas_video_inicio.webp" alt="Foto de diferentes plataformas de videos" />
+          <h3>Plataformas de videos premium.</h3>
+          <p>Aquí encontrás todas las plataformas de series disponibles para buscar a tu Parter Spend!!</p>
+          <button type="button" class="btn btn-danger">Ver más...</button>
+        </div>
+        <!-- Segunda tarjeta -->
+        <div class="tarjeta">
+          <img src="img/inicio_gimnasios.jpg" alt="Foto para referirse a gimnasios" />
+          <h3>Gimnasios disponibles.</h3>
+          <p>Aquí encontrás todos los gimnasios disponibles para buscar a tu Parter Spend!!</p>
+          <button type="button" class="btn btn-danger">Ver más...</button>
+        </div>
+        <!-- Tercera tarjeta -->
+        <div class="tarjeta">
+          <img src="img/inicio_casas.jpeg" alt="Foto de diferentes casas" />
+          <h3>Viviendas para compartir.</h3>
+          <p>Aquí encontrás todas las viviendas disponibles para buscar a tu Parter Spend!!</p>
+          <button type="button" class="btn btn-danger">Ver más...</button>
+        </div>
+        <!-- Cuarta tarjeta -->
+        <div class="tarjeta">
+          <img src="img/inicio_musica.png" alt="Foto de diferentes aplicaciones premium de música" />
+          <h3>Plataformas para escuchar música premium.</h3>
+          <p>Aquí encontrás todas las plataformas de música disponibles para buscar a tu Parter Spend!!</p>
+          <button type="button" class="btn btn-danger">Ver más...</button>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Partner Spend
+            </h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias omnis repellat, ipsam facere
+              repellendus asperiores vitae laudantium praesentium perferendis quod aspernatur et nam voluptatum.
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+            <p><i class="fas fa-home mr-3"></i> Lugo 10012, Galicia, ES</p>
+            <p><i class="fas fa-envelope mr-3"></i> infoPartnSpend@gmail.es</p>
+            <p><i class="fas fa-phone mr-3"></i> + 34 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 982 299 732 89</p>
+          </div>
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Siguenos en nuestras redes sociales:</h6>
+
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1 bordeicono" style="background-color: #3b5998" href="#!"
+              role="button"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ec9543" href="#!" role="button"><i
+                class="fab fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i
+                class="fab fa-linkedin-in"></i></a>
+            <!-- Github -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2024 Copyright:
+      <a class="text-white" href=".">Alberto González Rodríguez.
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>

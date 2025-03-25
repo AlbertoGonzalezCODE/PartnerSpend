@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PartnerSpend</title>
+  <link rel="icon" href="img/logo.PNG" type="image/x-icon"> <!--Esto lo hago para que aparezca un logo arriba en la ventana del buscador -->
+  <link rel="stylesheet" href="bootstrap.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
+</head>
+
+
+<body>
+  <div class="container">
+    <header>
+      <!--Añado una clase "navegadorMenu" para darle estilo en css-->
+      <nav class="navbar navbar-expand-lg navegadorMenu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">PartnerSpend
+            <!--Aqui meto un icono que sigue al nombre de la pagina-->
+            <i class="fa-regular fa-handshake"></i>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#servicios-disponibles">Servicios disponibles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="peticiones.html">Peticiones</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sobre nosotros
+                </a>
+                <ul class="dropdown-menu navegadorMenu">
+                  <li><a class="dropdown-item" href="#">Historial</a></li>
+                  <li><a class="dropdown-item" href="#">Competencias</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Cuenta
+                </a>
+                <ul class="dropdown-menu navegadorMenu">
+                  <li><a class="dropdown-item" href="log-in.html">Iniciar sesión</a></li>
+                  <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                </ul>
+          </ul>
+            <!--Aquí utilizo un buscador en el menú para poder filtrar información o buscar cosas-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <section>
+        <div class="row py-5 mt-4 align-items-center">
+            <!-- Izquierda del formulario -->
+            <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+                <img src="https://bootstrapious.com/i/snippets/sn-registeration/illustration.svg" alt="foto de registro" class="img-fluid mb-3 d-none d-md-block">
+                <h1>Crea tu cuenta y disfruta de sus ventajas!</h1>
+                <p class="font-italic text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laboriosam doloremque molestias, enim eveniet dolore.</p>
+                <p class="font-italic text-muted">Fragmento por<a href="" class="text-muted">
+                    <u>Alberto González Rodríguez</u></a>
+                </p>
+            </div>
+    
+            <!-- Formulario de registro -->
+            <div class="col-md-7 col-lg-6 ml-auto">
+                <form action="#">
+                    <div class="row">
+    
+                        <!-- Primer nombre -->
+                        <div class="input-group col-lg-6 mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-user text-muted"></i>
+                                </span>
+                            </div>
+                            <input id="firstName" type="text" name="Nombre" placeholder="Nombre" maxlength="15" class="form-control bg-white border-left-0 border-md">
+                        </div>
+    
+                        <!-- Apellidos -->
+                        <div class="input-group col-lg-6 mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-user text-muted"></i>
+                                </span>
+                            </div>
+                            <input id="lastName" type="text" name="Apellidos" placeholder="Apellidos" maxlength="30" class="form-control bg-white border-left-0 border-md">
+                        </div>
+    
+                        <!-- Email -->
+                        <div class="input-group col-lg-12 mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-envelope text-muted"></i>
+                                </span>
+                            </div>
+                            <input id="email" type="email" name="email" placeholder="Correo electrónico" class="form-control bg-white border-left-0 border-md">
+                        </div>
+    
+                        <!-- Numero de telefono -->
+                        <div class="input-group col-lg-12 mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-phone-square text-muted"></i>
+                                </span>
+                            </div>
+                            <select id="countryCode" name="countryCode" style="max-width: 80px" class="custom-select form-control bg-white border-left-0 border-md h-100 font-weight-bold text-muted">
+                                <option value="">+34</option>
+                                <option value="">+982</option>
+                                <option value="">+15</option>
+                                <option value="">+18</option>
+                            </select>
+                            <input id="phoneNumber" type="tel" name="phone" placeholder="Número de teléfono" maxlength="9" class="form-control bg-white border-md border-left-0 pl-3">
+                        </div>.
+    
+    
+                        <!-- Job -->
+                        <div class="input-group col-lg-12 mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                  <i class="fa-regular fa-calendar-days"></i>
+                                </span>
+                            </div>
+                            <select id="job" name="jobtitle" class="form-control custom-select bg-white border-left-0 border-md">
+                                <option value="">Elige un rango de edad:</option>
+                                <option value="">Adolescente (16-20)</option>
+                                <option value="">Joven (21-35)</option>
+                                <option value="">Adulto (36-55)</option>
+                                <option value="">Mayor (56-99)</option>
+                            </select>
+                        </div>
+    
+                        <!-- Contraseña -->
+                        <div class="input-group col-lg-6 mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-lock text-muted"></i>
+                                </span>
+                            </div>
+                            <input id="password" type="password" name="password" placeholder="Contraseña" class="form-control bg-white border-left-0 border-md">
+                        </div>
+    
+                        <!-- Contraseña Confirmación -->
+                        <div class="input-group col-lg-6 mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-lock text-muted"></i>
+                                </span>
+                            </div>
+                            <input id="passwordConfirmation" type="password" name="passwordConfirmation" placeholder="Confirma la contraseña" class="form-control bg-white border-left-0 border-md">
+                        </div>
+    
+                        <!-- Submit botón -->
+                        <div class="form-group col-lg-12 mx-auto mb-0">
+                            <a href="#" class="btn btn-primary btn-block py-2">
+                                <span class="font-weight-bold">Crear tu cuenta</span>
+                            </a>
+                        </div>
+    
+                        <!-- Divisor de texto -->
+                        <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+                            <div class="border-bottom w-100 ml-5"></div>
+                            <span class="px-2 text-muted font-weight-bold text-muted">Or</span>
+                            <div class="border-bottom w-100 mr-2"></div>
+                        </div>
+    
+                        <!-- Rregistro desde otras apps -->
+                        <div class="form-group col-lg-12 mx-auto">
+                            <a href="#" class="btn btn-primary btn-block py-2 btn-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span class="font-weight-bold">Continua con Facebook</span>
+                            </a>
+                            <a href="#" class="btn btn-primary btn-block py-2 btn-twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span class="font-weight-bold">Continua con Twitter</span>
+                            </a>
+                        </div>
+    
+                        <!-- Si ya estás registrado -->
+                        <div class="text-center w-100">
+                            <p class="text-muted font-weight-bold">¿Ya estás registrado? <a href="#" class="text-primary ml-2">Login</a></p>
+                        </div>
+    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Partner Spend
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias omnis repellat, ipsam facere
+                repellendus asperiores vitae laudantium praesentium perferendis quod aspernatur et nam voluptatum.
+              </p>
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+              <p><i class="fas fa-home mr-3"></i> Lugo 10012, Galicia, ES</p>
+              <p><i class="fas fa-envelope mr-3"></i> infoPartnSpend@gmail.es</p>
+              <p><i class="fas fa-phone mr-3"></i> + 34 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> + 982 299 732 89</p>
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Siguenos en nuestras redes sociales:</h6>
+
+              <!-- Facebook -->
+              <a class="btn btn-primary btn-floating m-1 bordeicono" style="background-color: #3b5998" href="#!"
+                role="button"><i class="fab fa-facebook-f"></i></a>
+
+              <!-- Twitter -->
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                  class="fab fa-twitter"></i></a>
+
+              <!-- Google -->
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                  class="fab fa-google"></i></a>
+
+              <!-- Instagram -->
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #ec9543" href="#!" role="button"><i
+                  class="fab fa-instagram"></i></a>
+
+              <!-- Linkedin -->
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <!-- Github -->
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href=".">Alberto González Rodríguez.
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>

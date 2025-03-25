@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PartnerSpend</title>
+  <link rel="icon" href="img/logo.PNG" type="image/x-icon"> <!--Esto lo hago para que aparezca un logo arriba en la ventana del buscador -->
+  <link rel="stylesheet" href="bootstrap.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
+</head>
+
+
+<body>
+  <div class="container">
+    <!-- Cabecera -->
+    <header>
+      <!--Añado una clase "navegadorMenu" para darle estilo en css-->
+      <nav class="navbar navbar-expand-lg navegadorMenu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">PartnerSpend
+            <!--Aqui meto un icono que sigue al nombre de la pagina-->
+            <i class="fa-regular fa-handshake"></i>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#servicios-disponibles">Servicios disponibles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="peticiones.html">Peticiones</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sobre nosotros
+                </a>
+                <ul class="dropdown-menu navegadorMenu">
+                  <li><a class="dropdown-item" href="#">Historial</a></li>
+                  <li><a class="dropdown-item" href="#">Competencias</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Cuenta
+                </a>
+                <ul class="dropdown-menu navegadorMenu">
+                  <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
+                  <li><a class="dropdown-item" href="registrarse.html">Registrarse</a></li>
+                </ul>
+          </ul>
+            <!--Aquí utilizo un buscador en el menú para poder filtrar información o buscar cosas-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Formulario de inicio de sesión -->
+    <section>
+        <div class="container-fluid h-custom">
+            <div class="rowlogin d-flex justify-content-center align-items-center h-100">
+              <div class="col-md-9 col-lg-6 col-xl-5">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                  class="img-fluid" alt="Sample image">
+              </div>
+              <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <form>
+                  <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                    <p class="lead fw-normal mb-0 me-3">Inicia sesión con</p>
+                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+        
+                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
+                      <i class="fab fa-google"></i>
+                    </button>
+        
+                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+        
+                  <div class="divider d-flex align-items-center my-4">
+                    <p class="text-center fw-bold mx-3 mb-0">O tambienén puedes:</p>
+                  </div>
+        
+                  <!-- Email input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="email" id="form3Example3" class="form-control form-control-lg"
+                      placeholder="Introduce un correo electrónico" />
+                    <label class="form-label" for="form3Example3">Dirección de correo electrónico</label>
+                  </div>
+        
+                  <!-- Password input -->
+                  <div data-mdb-input-init class="form-outline mb-3">
+                    <input type="password" id="form3Example4" class="form-control form-control-lg"
+                      placeholder="Introduce una contraseña" />
+                    <label class="form-label" for="form3Example4">Contraseña</label>
+                  </div>
+        
+                  <div class="d-flex justify-content-between align-items-center">
+                    <!-- Checkbox -->
+                    <div class="form-check mb-0">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                      <label class="form-check-label" for="form2Example3">
+                        Recordar contraseña
+                      </label>
+                    </div>
+                    <a href="#!" class="text-body">Olvidaste tu contraseña?</a>
+                  </div>
+        
+                  <div class="text-center text-lg-start mt-4 pt-2">
+                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
+                      style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                    <p class="small fw-bold mt-2 pt-1 mb-0">No tienes una cuenta todavia? <a href="registrarse.html"
+                        class="link-danger">Registrarse</a></p>
+                  </div>
+        
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Partner Spend
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias omnis repellat, ipsam facere
+                repellendus asperiores vitae laudantium praesentium perferendis quod aspernatur et nam voluptatum.
+              </p>
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+              <p><i class="fas fa-home mr-3"></i> Lugo 10012, Galicia, ES</p>
+              <p><i class="fas fa-envelope mr-3"></i> infoPartnSpend@gmail.es</p>
+              <p><i class="fas fa-phone mr-3"></i> + 34 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> + 982 299 732 89</p>
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Siguenos en nuestras redes sociales:</h6>
+
+              <!-- Facebook -->
+              <a class="btn btn-primary btn-floating m-1 bordeicono" style="background-color: #3b5998" href="#!"
+                role="button"><i class="fab fa-facebook-f"></i></a>
+
+              <!-- Twitter -->
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                  class="fab fa-twitter"></i></a>
+
+              <!-- Google -->
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                  class="fab fa-google"></i></a>
+
+              <!-- Instagram -->
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #ec9543" href="#!" role="button"><i
+                  class="fab fa-instagram"></i></a>
+
+              <!-- Linkedin -->
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <!-- Github -->
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href=".">Alberto González Rodríguez.
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
